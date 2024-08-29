@@ -1,0 +1,989 @@
+<!DOCTYPE htmlgeneral negative >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amanda's Homework Assignment</title>
+<style>
+h1{text-align:center;}
+table, th, td {border: 1px solid black;}
+div{text-align:center; font-weight:bold;}
+th{background-color:#A4D7EC;}
+</style>
+
+</head>
+<body>
+    
+    <h1> God Created Man in His Own Image</h1>
+
+
+
+    <table>
+    <tr>
+        <th colspan="3">How I See Myself</th>
+    
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Negative Traits</td>
+        <td>Positive Traits</td>
+    <tr>
+        <td>Physical Characteristics</td>
+        <td>
+    <div id="neg_ph_me"></div>
+    <div id="neg_ph_me1"></div>
+    <div id="neg_ph_me2"></div>
+   
+<select id = "MePn" onchange="meP_n(this)" >
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "MePn1" onchange="meP_n1(this)" >
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "MePn2" onchange="meP_n2(this)" >
+    <option>Select trait</option>
+</select>
+
+        </td>
+        <td>
+
+    <div id="pos_ph_me"></div>
+    <div id="pos_ph_me1"></div>
+    <div id="pos_ph_me2"></div>
+    
+    <select id="MePp" onchange="meP_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id="MePp1" onchange="meP_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id="MePp2" onchange="meP_p2(this)">
+    <option>Select trait</option>
+</select>
+
+        </td>
+    </tr>
+
+
+ <tr>
+
+        <td>General Characteristics</td>
+        <td>
+<div id="neg_g_me"></div>
+<div id="neg_g_me1"></div>
+<div id="neg_g_me2"></div>
+
+<select id = "MeGn" onchange="meG_n(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+<select id = "MeGn1" onchange="meG_n1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+<select id = "MeGn2" onchange="meG_n2(this)">
+    <option>Select trait</option>
+</select>
+        </td>
+
+        <td>
+<div id="pos_g_me"></div>
+<div id="pos_g_me1"></div>
+<div id="pos_g_me2"></div>
+
+<select id = "MeGp" onchange="meG_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "MeGp1" onchange="meG_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+<select id = "MeGp2" onchange="meG_p2(this)">
+    <option>Select trait</option>
+</select>
+
+        </td>
+    </tr>
+
+
+    </table>
+
+    <br/>
+    
+    <table>
+    <tr>
+<th colspan="3"> How Others See me</th>
+    
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Negative Traits</td>
+        <td>Positive Traits</td>
+
+    <tr>
+        <td>Physical Characteristics</td>
+        <td>
+
+<div id="neg_ph_ot"></div>
+<div id="neg_ph_ot1"></div>
+<div id="neg_ph_ot2"></div>
+
+<select id = "OtPn" onchange="OtP_n(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtPn1" onchange="OtP_n1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtPn2" onchange="OtP_n2(this)">
+    <option>Select trait</option>
+</select>
+
+
+        </td>
+        <td>
+
+<div id="pos_ph_ot"></div>
+<div id="pos_ph_ot1"></div>
+<div id="pos_ph_ot2"></div>
+
+<select id = "OtPp" onchange="OtP_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtPp1" onchange="OtP_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtPp2" onchange="OtP_p2(this)">
+    <option>Select trait</option>
+</select>
+
+
+        </td>
+    </tr>
+
+ <tr>
+
+        <td>General Characteristics</td>
+        <td>
+<div id="neg_g_other"></div>
+<div id="neg_g_other1"></div>
+<div id="neg_g_other2"></div>
+
+<select id = "OtGn" onchange="OtG_neg(this)"> 
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtGn1" onchange="OtG_neg1(this)"> 
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtGn2" onchange="OtG_neg2(this)"> 
+    <option>Select trait</option>
+</select>
+
+        </td>
+
+        <td>
+
+<div id="pos_g_ot"></div>
+<div id="pos_g_ot1"></div>
+<div id="pos_g_ot2"></div>
+
+<select id = "OtGp" onchange="OtG_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtGp1" onchange="OtG_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "OtGp2" onchange="OtG_p2(this)">
+    <option>Select trait</option>
+</select>
+
+        </td>
+    </tr>
+
+
+    </table>
+
+    <br/>
+    <table>
+    <tr>
+<th colspan="3"> How God Sees Me </th>
+    
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Negative Traits</td>
+        <td>Positive Traits</td>
+
+
+    <tr>
+        <td>Physical Characteristics</td>
+        <td>
+
+<div id="g_ph_neg"></div>
+<div id="g_ph_neg1"></div>
+<div id="g_ph_neg2"></div>
+
+<select id = "GodPn" onchange="GodP_n(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodPn1" onchange="GodP_n1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodPn2" onchange="GodP_n2(this)">
+    <option>Select trait</option>
+</select>
+        </td>
+
+        <td>
+
+<div id="g_ph_pos"></div>
+<div id="g_ph_pos1"></div>
+<div id="g_ph_pos2"></div>
+
+<select id = "GodPp" onchange="GodP_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodPp1" onchange="GodP_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodPp2" onchange="GodP_p2(this)">
+    <option>Select trait</option>
+</select>
+
+
+
+        </td>
+    </tr>
+
+ <tr>
+
+        <td>General Characteristics</td>
+        <td>
+<div id="neg_gen_god"></div>
+<div id="neg_gen_god1"></div>
+<div id="neg_gen_god2"></div>
+
+
+<select id = "GodGn" onchange="GodG_n(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodGn1" onchange="GodG_n1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodGn2" onchange="GodG_n2(this)">
+    <option>Select trait</option>
+</select>
+
+        </td>
+        <td>
+
+<div id="pos_gen_god"></div>
+<div id="pos_gen_god1"></div>
+<div id="pos_gen_god2"></div>
+
+<select id = "GodGp" onchange="GodG_p(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodGp1" onchange="GodG_p1(this)">
+    <option>Select trait</option>
+</select>
+<br/>
+<br/>
+
+<select id = "GodGp2" onchange="GodG_p2(this)">
+    <option>Select trait</option>
+</select>
+
+
+        </td>
+    </tr>
+
+    </table>
+
+<script>
+<!--local storage -->
+
+<!--me ph negative -->
+function meP_n(selectObject)
+{    var valuea = selectObject.value;
+    localStorage.setItem("me_ph_neg", valuea);
+
+    document.getElementById("neg_ph_me").innerHTML = localStorage.getItem("me_ph_neg");
+
+}
+  document.getElementById("neg_ph_me").innerHTML = localStorage.getItem("me_ph_neg");
+
+function meP_n1(selectObject)
+{    var valuea1 = selectObject.value;
+    localStorage.setItem("me_ph_neg1", valuea1);
+
+    document.getElementById("neg_ph_me1").innerHTML = localStorage.getItem("me_ph_neg1");
+
+}
+  document.getElementById("neg_ph_me1").innerHTML = localStorage.getItem("me_ph_neg1");
+
+function meP_n2(selectObject)
+{    var valuea2 = selectObject.value;
+    localStorage.setItem("me_ph_neg2", valuea2);
+
+    document.getElementById("neg_ph_me2").innerHTML = localStorage.getItem("me_ph_neg2");
+
+}
+  document.getElementById("neg_ph_me2").innerHTML = localStorage.getItem("me_ph_neg2");
+
+<!--me ph positive -->
+function meP_p(selectObject)
+{    var valueb = selectObject.value;
+    localStorage.setItem("me_ph_pos", valueb);
+
+    document.getElementById("pos_ph_me").innerHTML = localStorage.getItem("me_ph_pos");
+
+}
+  document.getElementById("pos_ph_me").innerHTML = localStorage.getItem("me_ph_pos");
+
+function meP_p1(selectObject)
+{    var valueb1 = selectObject.value;
+    localStorage.setItem("me_ph_pos1", valueb1);
+
+    document.getElementById("pos_ph_me1").innerHTML = localStorage.getItem("me_ph_pos1");
+
+}
+  document.getElementById("pos_ph_me1").innerHTML = localStorage.getItem("me_ph_pos1");
+
+function meP_p2(selectObject)
+{    var valueb2 = selectObject.value;
+    localStorage.setItem("me_ph_pos2", valueb2);
+
+    document.getElementById("pos_ph_me2").innerHTML = localStorage.getItem("me_ph_pos2");
+
+}
+  document.getElementById("pos_ph_me2").innerHTML = localStorage.getItem("me_ph_pos2");
+
+
+
+<!--me gen negative -->
+function meG_n(selectObject)
+{    var valuec = selectObject.value;
+    localStorage.setItem("me_g_neg", valuec);
+    document.getElementById("neg_g_me").innerHTML = localStorage.getItem("me_g_neg");
+}
+    document.getElementById("neg_g_me").innerHTML = localStorage.getItem("me_g_neg");
+
+function meG_n1(selectObject)
+{    var valuec1 = selectObject.value;
+    localStorage.setItem("me_g_neg1", valuec1);
+    document.getElementById("neg_g_me1").innerHTML = localStorage.getItem("me_g_neg1");
+}
+    document.getElementById("neg_g_me1").innerHTML = localStorage.getItem("me_g_neg1");
+
+function meG_n2(selectObject)
+{    var valuec2 = selectObject.value;
+    localStorage.setItem("me_g_neg2", valuec2);
+    document.getElementById("neg_g_me2").innerHTML = localStorage.getItem("me_g_neg2");
+}
+    document.getElementById("neg_g_me2").innerHTML = localStorage.getItem("me_g_neg2");
+
+<!--me gen positive -->
+function meG_p(selectObject)
+{    var valued = selectObject.value;
+    localStorage.setItem("me_g_pos", valued);
+
+    document.getElementById("pos_g_me").innerHTML = localStorage.getItem("me_g_pos");
+}
+  document.getElementById("pos_g_me").innerHTML = localStorage.getItem("me_g_pos");
+
+function meG_p1(selectObject)
+{    var valued1 = selectObject.value;
+    localStorage.setItem("me_g_pos1", valued1);
+
+    document.getElementById("pos_g_me1").innerHTML = localStorage.getItem("me_g_pos1");
+}
+  document.getElementById("pos_g_me1").innerHTML = localStorage.getItem("me_g_pos1");
+
+function meG_p2(selectObject)
+{    var valued2 = selectObject.value;
+    localStorage.setItem("me_g_pos2", valued2);
+
+    document.getElementById("pos_g_me2").innerHTML = localStorage.getItem("me_g_pos2");
+}
+  document.getElementById("pos_g_me2").innerHTML = localStorage.getItem("me_g_pos2");
+
+<!--others ph negative -->
+function OtP_n(selectObject)
+{    var valuee = selectObject.value;
+    localStorage.setItem("ot_ph_neg", valuee);
+
+    document.getElementById("neg_ph_ot").innerHTML = localStorage.getItem("ot_ph_neg");
+
+}
+  document.getElementById("neg_ph_ot").innerHTML = localStorage.getItem("ot_ph_neg");
+
+function OtP_n1(selectObject)
+{    var valuee1 = selectObject.value;
+    localStorage.setItem("ot_ph_neg1", valuee1);
+
+    document.getElementById("neg_ph_ot1").innerHTML = localStorage.getItem("ot_ph_neg1");
+
+}
+  document.getElementById("neg_ph_ot1").innerHTML = localStorage.getItem("ot_ph_neg1");
+
+function OtP_n2(selectObject)
+{    var valuee2 = selectObject.value;
+    localStorage.setItem("ot_ph_neg2", valuee2);
+
+    document.getElementById("neg_ph_ot2").innerHTML = localStorage.getItem("ot_ph_neg2");
+
+}
+  document.getElementById("neg_ph_ot2").innerHTML = localStorage.getItem("ot_ph_neg2");
+
+<!--others ph positive-->
+
+function OtP_p(selectObject)
+{    var valuef = selectObject.value;
+    localStorage.setItem("ot_ph_pos", valuef);
+
+    document.getElementById("pos_ph_ot").innerHTML = localStorage.getItem("ot_ph_pos");
+
+}
+  document.getElementById("pos_ph_ot").innerHTML = localStorage.getItem("ot_ph_pos");
+
+function OtP_p1(selectObject)
+{    var valuef1 = selectObject.value;
+    localStorage.setItem("ot_ph_pos1", valuef1);
+
+    document.getElementById("pos_ph_ot1").innerHTML = localStorage.getItem("ot_ph_pos1");
+
+}
+  document.getElementById("pos_ph_ot1").innerHTML = localStorage.getItem("ot_ph_pos1");
+
+function OtP_p2(selectObject)
+{    var valuef2 = selectObject.value;
+    localStorage.setItem("ot_ph_pos2", valuef2);
+
+    document.getElementById("pos_ph_ot2").innerHTML = localStorage.getItem("ot_ph_pos2");
+
+}
+  document.getElementById("pos_ph_ot2").innerHTML = localStorage.getItem("ot_ph_pos2");
+
+<!--others gent negative -->
+
+function OtG_neg(selectObject)
+{    var valuex = selectObject.value;
+    localStorage.setItem("other_g_neg", valuex);
+
+    document.getElementById("neg_g_other").innerHTML = localStorage.getItem("other_g_neg");
+
+}
+  document.getElementById("neg_g_other").innerHTML = localStorage.getItem("other_g_neg");
+
+function OtG_neg1(selectObject)
+{    var valuex1 = selectObject.value;
+    localStorage.setItem("other_g_neg1", valuex1);
+
+    document.getElementById("neg_g_other1").innerHTML = localStorage.getItem("other_g_neg1");
+
+}
+  document.getElementById("neg_g_other1").innerHTML = localStorage.getItem("other_g_neg1");
+
+function OtG_neg2(selectObject)
+{    var valuex2 = selectObject.value;
+    localStorage.setItem("other_g_neg2", valuex2);
+
+    document.getElementById("neg_g_other2").innerHTML = localStorage.getItem("other_g_neg2");
+
+}
+  document.getElementById("neg_g_other2").innerHTML = localStorage.getItem("other_g_neg2");
+
+<!--others gen positive -->
+
+function OtG_p(selectObject)
+{    var valueh = selectObject.value;
+    localStorage.setItem("ot_g_pos", valueh);
+
+    document.getElementById("pos_g_ot").innerHTML = localStorage.getItem("ot_g_pos");
+
+}
+  document.getElementById("pos_g_ot").innerHTML = localStorage.getItem("ot_g_pos");
+
+function OtG_p1(selectObject)
+{    var valueh1 = selectObject.value;
+    localStorage.setItem("ot_g_pos1", valueh1);
+
+    document.getElementById("pos_g_ot1").innerHTML = localStorage.getItem("ot_g_pos1");
+
+}
+  document.getElementById("pos_g_ot1").innerHTML = localStorage.getItem("ot_g_pos1");
+
+
+function OtG_p2(selectObject)
+{    var valueh2 = selectObject.value;
+    localStorage.setItem("ot_g_pos2", valueh2);
+
+    document.getElementById("pos_g_ot2").innerHTML = localStorage.getItem("ot_g_pos2");
+
+}
+  document.getElementById("pos_g_ot2").innerHTML = localStorage.getItem("ot_g_pos2");
+
+
+<!--god physcial -->
+
+function GodP_n(selectObject)
+{    var valuez= selectObject.value;
+    localStorage.setItem("god_physical_neg", valuez);
+
+    document.getElementById("g_ph_neg").innerHTML = localStorage.getItem("god_physical_neg");
+
+}
+  document.getElementById("g_ph_neg").innerHTML = localStorage.getItem("god_physical_neg");
+
+function GodP_n1(selectObject)
+{    var valuez1= selectObject.value;
+    localStorage.setItem("god_physical_neg1", valuez1);
+
+    document.getElementById("g_ph_neg1").innerHTML = localStorage.getItem("god_physical_neg1");
+
+}
+  document.getElementById("g_ph_neg1").innerHTML = localStorage.getItem("god_physical_neg1");
+
+function GodP_n2(selectObject)
+{    var valuez2= selectObject.value;
+    localStorage.setItem("god_physical_neg2", valuez2);
+
+    document.getElementById("g_ph_neg2").innerHTML = localStorage.getItem("god_physical_neg2");
+
+}
+  document.getElementById("g_ph_neg2").innerHTML = localStorage.getItem("god_physical_neg2");
+<!--god physcial positive -->
+
+function GodP_p(selectObject)
+{    var valuey= selectObject.value;
+    localStorage.setItem("god_physical_pos", valuey);
+
+    document.getElementById("g_ph_pos").innerHTML = localStorage.getItem("god_physical_pos");
+
+}
+  document.getElementById("g_ph_pos").innerHTML = localStorage.getItem("god_physical_pos");
+
+function GodP_p1(selectObject)
+{    var valuey1= selectObject.value;
+    localStorage.setItem("god_physical_pos1", valuey1);
+
+    document.getElementById("g_ph_pos1").innerHTML = localStorage.getItem("god_physical_pos1");
+
+}
+  document.getElementById("g_ph_pos1").innerHTML = localStorage.getItem("god_physical_pos1");
+
+function GodP_p2(selectObject)
+{    var valuey2= selectObject.value;
+    localStorage.setItem("god_physical_pos2", valuey2);
+
+    document.getElementById("g_ph_pos2").innerHTML = localStorage.getItem("god_physical_pos2");
+
+}
+  document.getElementById("g_ph_pos2").innerHTML = localStorage.getItem("god_physical_pos2");
+
+<!--god general negative  characteristics -->
+function GodG_n(selectObject)
+{    var valuel = selectObject.value;
+    localStorage.setItem("god_gen_neg", valuel);
+
+    document.getElementById("neg_gen_god").innerHTML = localStorage.getItem("god_gen_neg");
+
+}
+  document.getElementById("neg_gen_god").innerHTML = localStorage.getItem("god_gen_neg");
+
+function GodG_n1(selectObject)
+{    var valuel1 = selectObject.value;
+    localStorage.setItem("god_gen_neg1", valuel1);
+
+    document.getElementById("neg_gen_god1").innerHTML = localStorage.getItem("god_gen_neg1");
+
+}
+  document.getElementById("neg_gen_god1").innerHTML = localStorage.getItem("god_gen_neg1");
+
+function GodG_n2(selectObject)
+{    var valuel2 = selectObject.value;
+    localStorage.setItem("god_gen_neg2", valuel2);
+
+    document.getElementById("neg_gen_god2").innerHTML = localStorage.getItem("god_gen_neg2");
+
+}
+  document.getElementById("neg_gen_god2").innerHTML = localStorage.getItem("god_gen_neg2");
+
+<!--god general positive characteristics -->
+
+function GodG_p(selectObject)
+{    var valuem = selectObject.value;
+    localStorage.setItem("god_gen_pos", valuem);
+
+    document.getElementById("pos_gen_god").innerHTML = localStorage.getItem("god_gen_pos");
+
+}
+  document.getElementById("pos_gen_god").innerHTML = localStorage.getItem("god_gen_pos");
+
+
+function GodG_p1(selectObject)
+{    var valuem1 = selectObject.value;
+    localStorage.setItem("god_gen_pos1", valuem1);
+
+    document.getElementById("pos_gen_god1").innerHTML = localStorage.getItem("god_gen_pos1");
+
+}
+  document.getElementById("pos_gen_god1").innerHTML = localStorage.getItem("god_gen_pos1");
+
+
+function GodG_p2(selectObject)
+{    var valuem2 = selectObject.value;
+    localStorage.setItem("god_gen_pos2", valuem2);
+
+    document.getElementById("pos_gen_god2").innerHTML = localStorage.getItem("god_gen_pos2");
+
+}
+  document.getElementById("pos_gen_god2").innerHTML = localStorage.getItem("god_gen_pos2");
+<!--select physical options -->
+
+var Mpn = document.getElementById("MePn");
+var Mpn1 = document.getElementById("MePn1");
+var Mpn2 = document.getElementById("MePn2");
+
+var Mpp = document.getElementById("MePp");
+var Mpp1 = document.getElementById("MePp1");
+var Mpp2 = document.getElementById("MePp2");
+
+var Opn = document.getElementById("OtPn");
+var Opn1 = document.getElementById("OtPn1");
+var Opn2 = document.getElementById("OtPn2");
+
+
+var Opp = document.getElementById("OtPp");
+var Opp1 = document.getElementById("OtPp1");
+var Opp2 = document.getElementById("OtPp2");
+
+var Gpn =document.getElementById("GodPn");
+var Gpn1 =document.getElementById("GodPn1");
+var Gpn2 =document.getElementById("GodPn2");
+
+var Gpp = document.getElementById("GodPp");
+var Gpp1 = document.getElementById("GodPp1");
+var Gpp2 = document.getElementById("GodPp2");
+
+var PHoptions = ["---", "Eyes ", "Hair ", "Mouth", "Nose ","Eyebrows", "Able ", "Aged", "Agile", "Angular", "Athletic", "Attractive", "Bald", "Bearded", "Brawny", "Broad-shouldered", "Bulky", "Chubby", "Clean-shaven", "Clumsy", "Compact", "Curvy", "Dainty", "Dark", "Delicate", "Dimpled", "Disheveled", "Elegant", "Fierce", "Fighter", "Fit", "Flustered", "Frail", "Freckled", "Gaunt", "Gentle", "Graceful", "Grizzled", "Haggard", "Handsome", "Heavyset", "Hirsute", "Hunched", "Imposing", "Intricate", "Lanky", "Lean", "Light", "Lithe", "Long-legged", "Lustrous", "Messy", "Muscular", "Neat", "Petite", "Pierced", "Plain", "Plump", "Polished", "Poor", "Pretty", "Prim", "Proper", "Pudgy", "Refined", "Rich", "Rosy-cheeked", "Rugged", "Scarred", "Scrawny", "Scruffy", "Short", "Sleek", "Slender", "Slim", "Spectacled", "Spindly", "Spry", "Square-jawed", "Statuesque", "Stubby", "Stooped", "Strapping", "Strong", "Sturdy", "Sun-kissed", "Sunburned", "Tall", "Tanned", "Tattooed", "Thin", "Tireless", "Tough", "Tousled", "Tranquil", "Ugly", "Unkempt", "Veiny", "Vibrant", "Voluminous", "Weather-beaten", "Well-groomed", "Wild", "Wiry", "Wrinkled", "Youthful"]
+
+
+<!--**** physical traits -->
+<!--loop through and get physical traits -->
+for(var i = 0; i < PHoptions.length; i++) {
+    var opt = PHoptions[i];
+<!--me negative-->
+    var mn = document.createElement("option");
+    mn.textContent = opt;
+    mn.value = opt;
+    Mpn.appendChild(mn);
+
+   var mn1 = document.createElement("option");
+    mn1.textContent = opt;
+    mn1.value = opt;
+    Mpn1.appendChild(mn1);
+
+    var mn2 = document.createElement("option");
+    mn2.textContent = opt;
+    mn2.value = opt;
+    Mpn2.appendChild(mn2);
+
+
+<!--me positive-->
+    var mp = document.createElement("option");
+    mp.textContent = opt;
+    mp.value = opt;
+    Mpp.appendChild(mp);
+
+    var mp1 = document.createElement("option");
+    mp1.textContent = opt;
+    mp1.value = opt;
+    Mpp1.appendChild(mp1);
+
+
+    var mp2 = document.createElement("option");
+    mp2.textContent = opt;
+    mp2.value = opt;
+    Mpp2.appendChild(mp2);
+
+<!--other negative -->
+    var on = document.createElement("option");
+    on.textContent = opt;
+    on.value = opt;
+    Opn.appendChild(on);
+
+    var on1 = document.createElement("option");
+    on1.textContent = opt;
+    on1.value = opt;
+    Opn1.appendChild(on1);
+
+ var on2 = document.createElement("option");
+    on2.textContent = opt;
+    on2.value = opt;
+    Opn2.appendChild(on2);
+
+<!--other positive -->
+    var op = document.createElement("option");
+    op.textContent = opt;
+    op.value = opt;
+    Opp.appendChild(op);
+
+ var op1 = document.createElement("option");
+    op1.textContent = opt;
+    op1.value = opt;
+    Opp1.appendChild(op1);
+
+ var op2 = document.createElement("option");
+    op2.textContent = opt;
+    op2.value = opt;
+    Opp2.appendChild(op2);
+<!--god negative -->
+    var gn = document.createElement("option");
+    gn.textContent = opt;
+    gn.value = opt;
+    Gpn.appendChild(gn);
+
+    var gn1 = document.createElement("option");
+    gn1.textContent = opt;
+    gn1.value = opt;
+    Gpn1.appendChild(gn1);
+
+    var gn2 = document.createElement("option");
+    gn2.textContent = opt;
+    gn2.value = opt;
+    Gpn2.appendChild(gn2);
+
+<!--god positive -->
+    var gp = document.createElement("option");
+    gp.textContent = opt;
+    gp.value = opt;
+    Gpp.appendChild(gp);
+
+    var gp1 = document.createElement("option");
+    gp1.textContent = opt;
+    gp1.value = opt;
+    Gpp1.appendChild(gp1);
+
+    var gp2 = document.createElement("option");
+    gp2.textContent = opt;
+    gp2.value = opt;
+    Gpp2.appendChild(gp2);
+
+}
+
+<!--general positive -->
+
+var Mgp = document.getElementById("MeGp");
+var Mgp1 = document.getElementById("MeGp1");
+var Mgp2 = document.getElementById("MeGp2");
+
+var Ogp = document.getElementById("OtGp");
+var Ogp1 = document.getElementById("OtGp1");
+var Ogp2 = document.getElementById("OtGp2");
+
+var Ggp = document.getElementById("GodGp");
+var Ggp1 = document.getElementById("GodGp1");
+var Ggp2 = document.getElementById("GodGp2");
+
+var GPoptions = ["---", "Active", "Admirable", "Adventurous", "Agreeable", "Amiable", "Amusing", "Appreciative", "Athletic", "Authentic", "Benevolent", "Brave", "Bright", "Brilliant", "Calm", "Capable", "Caring", "Charming", "Cheerful", "Clean", "Clear-headed", "Clever", "Compassionate", "Confident", "Considerate", "Cooperative", "Courageous", "Courteous", "Creative", "Curious", "Dedicated", "Easygoing", "Educated", "Enthusiastic", "Ethical", "Exciting", "Extraordinary", "Fair", "Firm", "Focused", "Forgiving", "Friendly", "Generous", "Gentle", "Good-natured", "Grateful", "Happy", "Hardworking", "Helpful", "Heroic", "Honest", "Hopeful", "Humble", "Innocent", "Intelligent", "Inventive", "Joyful", "Kind", "Lively", "Loving", "Loyal", "Neat", "Nice", "Optimistic", "Organized", "Passionate", "Patient", "Peaceful", "Playful", "Polite", "Principled", "Reliable", "Respectful", "Responsible", "Self-disciplined", "Selfless", "Sincere", "Skillful", "Strong", "Sweet", "Thoughtful", "Trustworthy", "Understanding", "Unselfish", "Wise"]
+
+<!--loop and get traits  -->
+for(var i = 0; i < GPoptions.length; i++) {
+    var gpt = GPoptions[i];
+<!--me positive -->
+var mg = document.createElement("option");
+    mg.textContent = gpt;
+    mg.value = gpt;
+    Mgp.appendChild(mg);
+
+var mg1 = document.createElement("option");
+    mg1.textContent = gpt;
+    mg1.value = gpt;
+    Mgp1.appendChild(mg1);
+
+var mg2 = document.createElement("option");
+    mg2.textContent = gpt;
+    mg2.value = gpt;
+    Mgp2.appendChild(mg2);
+
+
+<!--other positive -->
+var og = document.createElement("option");
+    og.textContent = gpt;
+    og.value = gpt;
+    Ogp.appendChild(og);
+
+var og1 = document.createElement("option");
+    og1.textContent = gpt;
+    og1.value = gpt;
+    Ogp1.appendChild(og1);
+
+var og2 = document.createElement("option");
+    og2.textContent = gpt;
+    og2.value = gpt;
+    Ogp2.appendChild(og2);
+
+<!--God positive -->
+var godgpos= document.createElement("option");
+    godgpos.textContent = gpt;
+    godgpos.value = gpt;
+    Ggp.appendChild(godgpos);
+
+var godgpos1= document.createElement("option");
+    godgpos1.textContent = gpt;
+    godgpos1.value = gpt;
+    Ggp1.appendChild(godgpos1);
+
+var godgpos2= document.createElement("option");
+    godgpos2.textContent = gpt;
+    godgpos2.value = gpt;
+    Ggp2.appendChild(godgpos2);
+
+}
+
+<!--general negative -->
+
+var Mgn = document.getElementById("MeGn");
+var Mgn1 = document.getElementById("MeGn1");
+var Mgn2 = document.getElementById("MeGn2");
+
+var Ogn = document.getElementById("OtGn");
+var Ogn1 = document.getElementById("OtGn1");
+var Ogn2 = document.getElementById("OtGn2");
+
+var Ggn = document.getElementById("GodGn");
+var Ggn1 = document.getElementById("GodGn1");
+var Ggn2 = document.getElementById("GodGn2");
+
+var GNoptions = ["---", "Aggressive", "Angry", "Anxious", "Argumentative", "Arrogant", "Bored", "Bossy", "Brutal", "Careless", "Charmless", "Clumsy", "Conceited", "Cowardly", "Critical", "Cruel", "Dangerous", "Deceitful", "Destructive", "Devious", "Difficult", "Discouraging", "Discourteous", "Dishonest", "Disloyal", "Disobedient", "Disorganized", "Disrespectful", "Disruptive", "Envious", "Fearful", "Foolish", "Forgetful", "Frightening", "Gloomy", "Greedy", "Grim", "Hateful", "Haughty", "Hostile", "Ignorant", "Impatient", "Impractical", "Inconsiderate", "Insincere", "Insulting", "Intolerant", "Irresponsible", "Irritable", "Jealous", "Lazy", "Liar", "Mean", "Meddlesome", "Messy", "Miserable", "Monstrous", "Moody", "Negative", "Neglectful", "Obnoxious", "Petty", "Possessive", "Power-hungry", "Prejudiced", "Resentful", "Rude", "Scornful", "Selfish", "Shallow", "Sloppy", "Sneaky", "Snobbish", "Thoughtless", "Unappreciative", "Uncaring", "Uncooperative", "Unforgiving", "Unfriendly", "Ungrateful", "Unhealthy", "Unreliable", "Violent", "Weak", "Wicked"]
+
+<!--loop and get traits  -->
+for(var i = 0; i < GNoptions.length; i++) {
+    var gnt = GNoptions[i];
+<!--me negative-->
+var me_neg= document.createElement("option");
+    me_neg.textContent = gnt;
+    me_neg.value = gnt;
+    Mgn.appendChild(me_neg);
+
+var me_neg1= document.createElement("option");
+    me_neg1.textContent = gnt;
+    me_neg1.value = gnt;
+    Mgn1.appendChild(me_neg1);
+
+var me_neg2= document.createElement("option");
+    me_neg2.textContent = gnt;
+    me_neg2.value = gnt;
+    Mgn2.appendChild(me_neg2);
+
+<!--other negative-->
+
+var og_n = document.createElement("option");
+    og_n.textContent = gnt;
+    og_n.value = gnt;
+    Ogn.appendChild(og_n);
+
+var og_n1 = document.createElement("option");
+    og_n1.textContent = gnt;
+    og_n1.value = gnt;
+    Ogn1.appendChild(og_n1);
+
+var og_n2 = document.createElement("option");
+    og_n2.textContent = gnt;
+    og_n2.value = gnt;
+    Ogn2.appendChild(og_n2);
+<!--God negative-->
+var godg_n= document.createElement("option");
+    godg_n.textContent = gnt;
+    godg_n.value = gnt;
+    Ggn.appendChild(godg_n);
+
+var godg_n1= document.createElement("option");
+    godg_n1.textContent = gnt;
+    godg_n1.value = gnt;
+    Ggn1.appendChild(godg_n1);
+
+var godg_n2= document.createElement("option");
+    godg_n2.textContent = gnt;
+    godg_n2.value = gnt;
+    Ggn2.appendChild(godg_n2);
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
