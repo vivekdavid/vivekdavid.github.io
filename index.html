@@ -5,37 +5,125 @@
     <title></title>
 
 
-   <title>100 Acts of love</title>
+   <title>  100 Acts of love</title>
+
+<style>
+
+#heading{
+width:100%;
+background-color:#FF4136;
+color:#FFFFFF;
+top:0;
+position:absolute;
+text-align:center;
+}
+
+#body_container{
+    margin-top:6em;
+    position:relative;
+
+}
+
+#body_container{
+padding:1.5rem}
+
+
+#input_form{background-color:#dddddd;
+            padding:1.5em;
+            border-radius:15px; 
+            border:solid;
+            border-color:#AAAAAA;
+}
+.box_center{
+display:flex;
+justify-content:center;
+align-items:center;
+
+
+}
+
+textarea{height:6em;
+    width:100%;
+}
+
+#submit_btn{
+border: none;
+border-radius: 20px;
+padding: 0.5em 20%;
+background-color:#2ECC40;
+color:black;
+border:solid;
+border-color:#00cc38;
+font-weight:bold;
+}
+.delete_btn{
+border: none;
+border-radius: 20px;
+padding: 1px 1em;
+background-color:#FF4136;
+color:white;
+text:bold;
+font-weight:bold;
+margin-left:2em;
+border:solid;
+border-color: #ff363c;
+}
+
+.clear_btn{
+border: none;
+border-radius: 20px;
+padding:3px 3em;
+background-color: #FF3333;
+color:white;
+text:bold;
+font-weight:bold;
+border:solid;
+border-color: #ff363c;
+
+}
+
+
+
+
+
+
+
+</style>
 </head>
 <body>
    
 
- <h1> 100 Acts of love challenge</h1>
+    <div id = "heading">
 
- <p>Show love to others for God.  It can be something as simple as a smile, a compliment, helping with a chore.  Listening to a family member instead of telling them you are busy. Even something as simple as saying a prayer for someone in private.</p> 
+ <h1> 100 Acts of love challenge   &#10013;</h1>
+</div>
 
- <p>Note: I'm not sure whether to just people to do acts of love - or to offer acts of love as an offering to God / think about what the holy spirit would want.  </p> 
- <ol <form id="form">
+<div id = "body_container">
+    <h2>Can you reach 100 Acts of Love for others?</h2>
+    <p><b>Rules:</b>  Write down your acts of love until you reach 100. It can be something as simple as a smile, a kind word, listening instead of telling someone you are busy. Even something as simple as saying a prayer for someone in private. 
+  
+    </p> 
 
-    <label for="date">Date (optional)</label>
- <input type="date" name="date" id="date">
- <br/>
- <hr/>
- <label for="person_loved">Who I loved (optional) </label>
- <input type="text" name="person_loved" id="person_loved">
- <br/>
- <hr/>
- <label for="love_act">The act of love.   God is pleased by all acts of love, big and small and all acts of love bring you closer to him. 
- </label><br/>
- <input type="textarea" name="love_act" id="love_act">
- </br>
- <input type="button" onclick="passToBrowser()" value="Submit">
- </form>
+  <form id="input_form">
 
+      
+      <textarea placeholder="Write your act of love here. All acts of love, big and small, are pleasing God." name="love_act" id="love_act"  rows="11"  required></textarea>
+ <br/><hr/>
+<label for="person_loved">The person I loved (optional) </label>
+ <input type="text" name="person_loved" id="person_loved"/>
+ <br/><hr/>
+    <label for="date">Date (leave blank for today's date)</label>
+ <input type="date" name="date" id="date"/>
+   <br/> <br/>
+  <div class = "box_center">
+ <input type="button" onclick="passToBrowser()" value="Submit" id="submit_btn">
+    </div> 
+  </form>
+  <br/>
+<input type="button" class="clear_btn" value="Clear All" onclick="confirmClear()">
 
- <h2>Acts of love</h2>
-
-
+ <h2> Your Acts of love</h2>
+ <div id="msg"></div>
 <div id="1"></div> 
 <div id="2"></div> 
 <div id="3"></div> 
@@ -136,42 +224,134 @@
 <div id="98"></div> 
 <div id="99"></div> 
 <div id="100"></div> 
-
- <input type="button" value="clear all" onclick="clearAll()">
-
-
-<p>
-desired feedback 
-</p>
-
-<ol>
-    <li>Was the site user friendly?  Did it feel natural using it and make you want to continue using it, if not what could change?</li>
-    <li>Did listing acts of love help bring you closer to God, or help bring the people around you to Christ? What could be done to improve the spiritual exercise?</li>
-    <li>Do you have any tips for making the UI better? (getting rid of the date field instead of inserting today when left blank,  adding other fields or relationships? </li>
-    <li> This is a prototype, the next version will allow you to share your info with friends or with a christian community - do you have any suggestions for stuff you wish to see?</li>
-    <li>The name 100 acts of love is trademarked (please don't tell them about this) do you have suggestions for a different name.  Preferably something catchy that feels like a fun social media challenge.</li>
-    <li>If you're tech or content person ideas for real world production best way to organize SQL tables(postgres or SQLlite),  best way to moderate content, best way to protect privacy of users and person loved (filtering proper names sounds compute intensive, making and enforcing rules is human resource intensive - better approach?) 
-</ol>
+<div id="101"></div> 
+<div id="102"></div> 
+<div id="103"></div> 
+<div id="104"></div> 
+<div id="105"></div> 
+<div id="106"></div> 
+<div id="107"></div> 
+<div id="108"></div> 
+<div id="109"></div> 
+<div id="110"></div> 
+<div id="111"></div> 
+<div id="112"></div> 
+<div id="113"></div> 
+<div id="114"></div> 
+<div id="115"></div> 
+<div id="116"></div> 
+<div id="117"></div> 
+<div id="118"></div> 
+<div id="119"></div> 
+<div id="120"></div> 
+<div id="121"></div> 
+<div id="122"></div> 
+<div id="123"></div> 
+<div id="124"></div> 
+<div id="125"></div> 
+<div id="126"></div> 
+<div id="127"></div> 
+<div id="128"></div> 
+<div id="129"></div> 
+<div id="130"></div> 
+<div id="131"></div> 
+<div id="132"></div> 
+<div id="133"></div> 
+<div id="134"></div> 
+<div id="135"></div> 
+<div id="136"></div> 
+<div id="137"></div> 
+<div id="138"></div> 
+<div id="139"></div> 
+<div id="140"></div> 
+<div id="141"></div> 
+<div id="142"></div> 
+<div id="143"></div> 
+<div id="144"></div> 
+<div id="145"></div> 
+<div id="146"></div> 
+<div id="147"></div> 
+<div id="148"></div> 
+<div id="149"></div> 
+<div id="150"></div> 
+<div id="151"></div> 
+<div id="152"></div> 
+<div id="153"></div> 
+<div id="154"></div> 
+<div id="155"></div> 
+<div id="156"></div> 
+<div id="157"></div> 
+<div id="158"></div> 
+<div id="159"></div> 
+<div id="160"></div> 
+<div id="161"></div> 
+<div id="162"></div> 
+<div id="163"></div> 
+<div id="164"></div> 
+<div id="165"></div> 
+<div id="166"></div> 
+<div id="167"></div> 
+<div id="168"></div> 
+<div id="169"></div> 
+<div id="170"></div> 
+<div id="171"></div> 
+<div id="172"></div> 
+<div id="173"></div> 
+<div id="174"></div> 
+<div id="175"></div> 
+<div id="176"></div> 
+<div id="177"></div> 
+<div id="178"></div> 
+<div id="179"></div> 
+<div id="180"></div> 
+<div id="181"></div> 
+<div id="182"></div> 
+<div id="183"></div> 
+<div id="184"></div> 
+<div id="185"></div> 
+<div id="186"></div> 
+<div id="187"></div> 
+<div id="188"></div> 
+<div id="189"></div> 
+<div id="190"></div> 
+<div id="191"></div> 
+<div id="192"></div> 
+<div id="193"></div> 
+<div id="194"></div> 
+<div id="195"></div> 
+<div id="196"></div> 
+<div id="197"></div> 
+<div id="198"></div> 
+<div id="199"></div> 
+<div id="200"></div> 
+ 
+</div>
 <script>
 
     window.onload=function(){
     inputData()
-    checkNullId()}
+    checkNullId()
+     initialMsg()
+    }
 
     function passToBrowser() {
     let l_date = document.querySelector("#date").value;
     let recipient = document.querySelector("#person_loved").value;
     let act = document.querySelector("#love_act").value;
-    
 
 /// setting up for nil date 
        
        if (l_date == "" ){ 
             let d = new Date();
-            l_date = d.getFullYear();
+            let l_year = d.getFullYear();
+            let l_month = d.getMonth() +1;
+            let l_day = d.getDate();
+          l_date = l_year + "-" + l_month + "-" + l_day;
+           console.log(l_date)
        } else {
         l_date == l_date}
-  
+
+//item 
         let Id = localStorage.getItem("id");
     let newId = parseInt(Id) + 1;
 
@@ -181,51 +361,76 @@ desired feedback
         console.log(Id);
         console.log(newId);
 
-        const formDataArray = [l_date, recipient, act];
+        const formDataArray = ['<b> Date : </b>', l_date, '<b> &nbsp;~~ &nbsp; Person Loved : </b>',recipient,'<br/><br/>  <b> &#9829 &nbsp;',act, '</b>'] 
+        let fixedDataArray = formDataArray.join(" " )
     localStorage.setItem("id",newId)
-    localStorage.setItem(newId,JSON.stringify(formDataArray));
+    localStorage.setItem(newId,JSON.stringify(fixedDataArray).replace(/"/g,''));
+    document.location.reload(); 
     }
   
 
 
     function inputData(){
-        for(let i=1; i<101; i++){
-            let n = localStorage.getItem(i); 
-            if (n == null){break};
-            
-            document.getElementById(i).innerHTML += "<div id='"+i+"'>" + n + "<input type='button' value='delete' onclick='deleteData("+ i + ")'></div>"
+        let idCount = localStorage.getItem("id");
+        let newId = parseInt(idCount) + 1;
+        console.log(newId)
+        for(let i=1; i < newId; i++){
+            let n = localStorage.getItem(i);
+            console.log(n)
+            if(n ==null){continue;}
+            document.getElementById(i).innerHTML += "<div id='"+i+"'>" + n + "<input type='button' class='delete_btn' value='Delete' onclick='deleteData("+ i + ")'> <br/><hr/></div>"
         } 
     }
 
-
-
     function deleteData(i){
-        let test = document.getElementById(i).innerHTML = "<div id='"+i+"'></div>" 
-
-
+    localStorage.removeItem(i);
+        document.location.reload(); 
+      
     }
 
-/*
-    function inputData(){
-
-    let test = localStorage.getItem(1)
-        console.log(test) 
-    document.getElementById("test").innerHTML = JSON.parse(test) 
-
-    }
-*/
 
     function checkNullId(){
-    let checkID = localStorage.getItem("id")
+    let checkID = localStorage.getItem("id");
         if (checkID == null){
-        localStorage.setItem("id",0)
-        }
+        localStorage.setItem("id",0);
+        }     
 
     console.log(localStorage.getItem("id"));
+    console.log(localStorage.length);
     }
 
+    function initialMsg(){
+
+    let stored_items = localStorage.length;
+    let acts_num = parseInt(stored_items)-1;
+    let remaining = 100- acts_num;
+     let checkID = localStorage.getItem("id");
+        if (checkID == 0){
+            document.getElementById("msg").innerHTML += "<p>nothing recorded yet, let's get started!</p>"; 
+        } else if (checkID == 1)
+        {  document.getElementById("msg").innerHTML += "<p>Congratulations on your first act of love! </p> <hr/>"      } else if (stored_items == 101){   document.getElementById("msg").innerHTML += "<p>You did it! Congratulations on 100 acts of love!</p><hr/>"
+        }else{
+            document.getElementById("msg").innerHTML += "<p>Congratulations, you've reached " + acts_num + " acts of love. Only " + remaining + " acts of love to go!</p><hr/>"        }
+
+        }
+    
+
+
+    function confirmClear(){
+
+    let text = "This will clear the data you entered on this site. Do you wish to proceed?"
+    if (confirm(text) == true){
+        clearAll();} else{
+        return}
+    } 
+
+    
+
     function clearAll(){
-        localStorage.clear();}
+        localStorage.clear();
+    document.location.reload(); 
+
+    }
 </script>
 </body>
 </html>
