@@ -11,21 +11,33 @@
 
 <style>
 
+body{margin:0px;
+background-color:#FF4136;}
 #heading{
 width:100%;
 background-color:#FF4136;
-color:#FFFFFF;
-top:0;
-left:0;
-position:absolute;
-text-align:center;
-font-size:.75em;
 }
 
+#hero_text{
+padding-bottom:-0.5em; 
+text-align:center;
+font-size:.70em;
+color:#FFFFFF;
+}
 
+#menu{
+font-weight:bold;
+color:white;
+background-color:#ff4136;
+padding: 1em 2em 1em 2em;
+border:solid 2px;
+border-color:#ffffff;
+margin-left:2em;
+}
 
 #body_container{
-    margin-top:4em;
+    background-color:white;
+    margin-top:3px;
     position:relative;
 
 }
@@ -88,27 +100,28 @@ border-color: #ff363c;
 
 }
 
-
-
-
-
-
-
+    #msg{margin-left:1em; }
 </style>
 </head>
 <body>
    
-
     <div id = "heading">
-
+        <div id= "hero_text">
  <h1> 100 Acts of love challenge   &#10013;</h1>
+
+
+        </div>
+
+        <button id="menu" onclick="instructions();"> Instructions </button>
 </div>
+    
 
 <div id = "body_container">
    
-    <p><b>Rules:</b>  Write down your acts of love until you reach 100. It can be something as simple as a smile, a kind word, listening instead of telling someone you are busy. 
-  
-    </p> 
+
+
+
+ <div id="msg"></div>
 
   <form id="input_form">
 
@@ -129,8 +142,8 @@ border-color: #ff363c;
 <input type="button" class="clear_btn" value="Clear All" onclick="confirmClear()">
 
  <h2> Your Acts of love</h2>
- <div id="msg"></div>
-<div id="1"></div> 
+ <hr/>
+ <div id="1"></div> 
 <div id="2"></div> 
 <div id="3"></div> 
 <div id="4"></div> 
@@ -330,7 +343,9 @@ border-color: #ff363c;
 <div id="198"></div> 
 <div id="199"></div> 
 <div id="200"></div> 
- 
+
+<div id="list"><p><a href="#heading">back to top</a></div>
+
 </div>
 <script>
 
@@ -339,6 +354,13 @@ border-color: #ff363c;
     checkNullId()
      initialMsg()
     }
+
+    function instructions() {
+ alert("Write your acts of love (coporal & spiritual works of mercy) until  your reach 100.  It can be something as simple as a smile, a kind word, listening instead of telling someone you are busy"
+
+ ); 
+    }
+
 
     function passToBrowser() {
     let l_date = document.querySelector("#date").value;
@@ -412,11 +434,11 @@ border-color: #ff363c;
     let remaining = 100- acts_num;
      let checkID = localStorage.getItem("id");
         if (checkID == 0){
-            document.getElementById("msg").innerHTML += "<p>nothing recorded yet, let's get started!</p>"; 
+            document.getElementById("msg").innerHTML += "<p>Nothing recorded yet, let's get started!</p>"; 
         } else if (checkID == 1)
-        {  document.getElementById("msg").innerHTML += "<p>Congratulations on your first act of love! </p> <hr/>"      } else if (stored_items == 101){   document.getElementById("msg").innerHTML += "<p>You did it! Congratulations on 100 acts of love!</p><hr/>"
+        {  document.getElementById("msg").innerHTML += "<p>Congratulations on your first <a href='#list'>act of love!</a> </p> <hr/>"      } else if (stored_items == 101){   document.getElementById("msg").innerHTML += "<p>You did it! Congratulations on <a href='#list'>100 acts of love!</a></p><hr/>"
         }else{
-            document.getElementById("msg").innerHTML += "<p>Congratulations, you've reached " + acts_num + " acts of love. Only " + remaining + " acts of love to go!</p><hr/>"        }
+            document.getElementById("msg").innerHTML += "<p>Congratulations, you've reached " + acts_num + "<a href='#list'> acts of love</a>. Only " + remaining + " to go!</p><hr/>"        }
 
         }
     
