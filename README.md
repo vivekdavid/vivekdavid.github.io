@@ -2,7 +2,7 @@
 
 ```mermaid
 
-            graph TD /
+            graph TD 
 
   AA[Judah<br/> House of David]-->AB([Solomon])
 
