@@ -76,7 +76,7 @@ I---I1
 I1([Hosea _2 kings 15:30_])
 ---|king of Assyria discovers that Hosea had sent envoys to Egypt while being his vassals|I2((Assyria marches against Samaria, people of Israel resettled))---I3((End of Israel)) 
 
-style I3 stroke:#333, stroke-width:10px, fill:#333, color:#ffffff 
+style I3 stroke:#333,stroke-width:10px,fill:#333,color:#ffffff 
 
 end
 
@@ -112,7 +112,7 @@ PR1--->PR2
 %%house of judah
 subgraph house_David[House of David]
 AC([Reboham])-->|17 years<br/> _1 kings 14 21_|AD([Abijam _1 kings 15:1_ sins of father 1 kings 15:3])--> |reignd 3 years and replaced by broher who was also son of absalom's dauhter _1 kings 15:9-10_| AE([Asa _1 kings 15:9_])---|did what was right and got rid of cult prostitutes and removed maacah from being queen mother for her idoltry _1 kings 15:11-13_|AF([Jesophat _1 kings 22:41_])--->|reigned 25 years _1 kings 22:42_|AG([Jehoram 2 kings 8:16])--->|ruled for 8 years 2 kings 8:17|AH([Ahazaiah _2 kings 8:25_])--->|also killed by Jehu alongside king of the North|AI([Athaliah _2 kings 11:1_])--->|mother of Ahaziah and gandaughter of Ahab, killed royal family after her son died and attempted to rule _2 kings 11:1_|AJ([Jehoash])--->|was hidden by his aunt and went on to rule|AK([Amaziah _2 kings 12:2])-->|29 year reign _2 kings 14:1_, was captured by king of Israel towards the end_2 kings 14:11_|AL([Jotham _2 kings 15:7_])--->AN([Ahaz _2 kings 16:1])--->|16 year reigh|AO([Hezekiah _2 kings 18:1_])--->|29 year reign _2 kings 18:2_|AP([Manassh _2 kings 21:1_])--->|55 year reign|AQ([Amon])--->|2 year reign|AR([josiah _2 kings 22:1_ ])--->|31 year reign|AS([Jehoahaz -_2 kings 23-3_])--->|3 month reign killed by Paraoh Neco|AT([Jehoiakim _2 kings 23:31_])--->|paid tribute to Pharaoh until he became vassal of Babylon|AU([Jehoiachin _2 kings 24:8_])--->|Nebuchadnezzar lays siege and installs Jehoiachin's uncle Zedekiah, exiles strongest soldiers and |AV([Zedekiah _2 kings 24:18_])---|Zedekiah rebels, Babylon kills his sons in front of him, gouge out his eyes|AW((Jerusalem's walls destroyed, Temple Burned and bulk of the population exiled to Babylon))---AX((End of Judah))
-style stroke:#333, stroke-width:10px, fill:#333, color:#ffffff 
+style stroke:#333,stroke-width:10px,fill:#333,color:#fff
 
 
 ```
