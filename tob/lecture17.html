@@ -45,7 +45,18 @@ font-size: 1.5rem;
 font-weight:normal}
 
  p{line-height:1.5rem;
-text-indent:1.5rem;}
+text-indent:1.5rem;
+  .responsive-text {
+  /* 1. Fluid Font Sizing */
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 2.5rem);
+  
+  /* 2. Beautiful Line Wrapping */
+  text-wrap: balance; 
+  
+  /* 3. Emergency Overflow Prevention */
+  overflow-wrap: break-word;
+}
+  }
 
 p:first-of-type{
 text-indent:0rem;}
